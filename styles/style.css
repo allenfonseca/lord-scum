@@ -294,7 +294,11 @@ h3 {
 
 /*---START Media Queries---*/
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
+
+	body {
+		max-width: 1000px;
+	}
 
 	.nav_main {
 		width: 70%;
@@ -311,14 +315,6 @@ h3 {
 		padding-top: 7px;
 		margin-left: -20px;
 	}
-
-	footer img {
-		margin-left: 24%;
-	}
-
-	footer .arrow_right {
-	margin-right: 10px;
-}
 
 	h3 {
 		font-size: 1em;
@@ -337,7 +333,17 @@ h3 {
  		padding-left: 20%;
  		font-size: 1.1rem;
 	}
+}
 
+@media only screen and (max-width: 400px) {
+
+	footer img {
+		margin-left: 24%;
+	}
+
+	footer .arrow_right {
+		margin-right: 10px;
+	}
 }
 
 /*--- END Media Queries---
