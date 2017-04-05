@@ -309,6 +309,10 @@ h5 {
 /*	and (min-width: 481px)*/
 	and (max-width: 667px) {
 
+	.book {
+		text-align: center;
+	}
+		
 	.nav_main {
 		width: 100%;
 		height: 30px;
@@ -356,10 +360,6 @@ h5 {
 
 	h5 {
 		font-size: 1.2rem;
-	}
-
-	.book {
-		text-align: center;
 	}
 
 	.fixed_100 {
