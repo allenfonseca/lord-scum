@@ -273,17 +273,24 @@ h5 {
 	margin-bottom: 30px;
 	text-transform: uppercase;
 	text-shadow: -1px 1px 5px rgba(201, 201, 201, 0.7);
-	text-align: center;
 	box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
+	position: sticky; 
+	top: -5px;
+	z-index: 10;
 }
 
 .nav_main ul {
-  margin-top: 2px;
+  	margin-top: 2px;
 }
 
 .nav_main li {
 	display: block;
 	float: left;
+	text-align: center;
 	font-size: 2rem;
 	width: 30%;
 	margin: 2px 1.5%;
@@ -298,23 +305,24 @@ h5 {
 /*---START Media Queries---*/
 
 
-@media only screen and (max-width: 1000px) {
-
-	body {
-		max-width: 1000px;
-	}	
+@media only screen and (max-width: 650px) {
 
 	.nav_main {
 		width: 100%;
-		margin: 10px auto 30px auto;
+		height: 30px;
+		margin: 0 auto 20px auto;
 		background-position: center;
 		line-height: 1.9rem;
 	}
 
+	.nav_main ul {
+		margin: -8px -20px 0 -40px;
+	}
+
 	.nav_main li {
 		width: 30%;
-		font-size: 2rem;
-		padding-top: 7px;
+		font-size: 1rem;
+		padding-top: 5px;
 	}
 
 	.text {
@@ -332,16 +340,12 @@ h5 {
  		margin-left: 10%;
 	}	
 
-}
-
-@media only screen and (max-width: 400px) {
-
-	footer img {
-		margin-left: 24%;
-	}
+	footer img:nth-of-type(1){
+		margin-left: 26%;
+	}	
 
 	footer .arrow_right {
-		margin-right: 10px;
+		margin-right: 8px;
 	}
 }
 
