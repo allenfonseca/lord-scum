@@ -354,6 +354,18 @@ h5 {
 @media only screen 
 	and (max-width: 480px) {
 
+	h5 {
+		font-size: 1.2rem;
+	}
+
+	.book {
+		text-align: center;
+	}
+
+	.fixed_100 {
+		font-size: 1.2rem;
+	}
+
 	.nav_main li {
 		letter-spacing: 0.01em;
 	}
