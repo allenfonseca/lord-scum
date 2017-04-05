@@ -305,7 +305,9 @@ h5 {
 /*---START Media Queries---*/
 
 
-@media only screen and (max-width: 650px) {
+@media only screen 
+/*	and (min-width: 481px)*/
+	and (max-width: 667px) {
 
 	.nav_main {
 		width: 100%;
@@ -346,6 +348,14 @@ h5 {
 
 	footer .arrow_right {
 		margin-right: 8px;
+	}
+}
+
+@media only screen 
+	and (max-width: 480px) {
+
+	.nav_main li {
+		letter-spacing: 0.01em;
 	}
 }
 
