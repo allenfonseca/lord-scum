@@ -303,7 +303,7 @@ input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"]:act
 .vid-container {
     position: relative;
     padding-bottom: 50%;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 35px; height: 0; overflow: hidden;
 	border: 3px solid black;
