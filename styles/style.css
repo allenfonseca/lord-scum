@@ -311,11 +311,6 @@ input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"]:act
 	box-shadow: 5px 5px 5px rgba(0,0,0,0.7), -5px -5px 5px rgba(0,0,0,0.7);	
 }
 
-.vid-container iframe {
-	margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .vid-container iframe,
 .vid-container object,
 .vid-container embed {
