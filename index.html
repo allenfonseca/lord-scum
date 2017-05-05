@@ -43,12 +43,13 @@
 
 		<section>
 			<div class="text header_center">
-				<h2>Debut Album OUT NOW!</h2>
+				<div class="youtube" data-embed="jraTpdohc5k"> 
+				    <div class="play-button">	
+				    </div>   
+				</div>				
+				<h2>Debut Album OUT NOW!</h2>							
 				<p>The Pond is hazy... The scumleaf-smokin' doom-spewing Lord Scum have arrived! Prepare for the Scumageddon as they awaken The Putrid One from his inebriated slumber. The whirlpool's swirling, it's time to dive!</p>
-				<p>Watch the promo, belooowwwww......</p>
-				<div class="vid-container">
-					<iframe src="https://www.youtube.com/embed/jraTpdohc5k?list=PLHePVky69WGFZAik6VnysC5XGcyhCMWNU&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-				</div>
+				<p>(Watch the promo, above)</p>
 			</div>
 		</section>				
 
@@ -58,8 +59,8 @@
 			<div class="text header_center">
 				<h2>Stream & Download!</h2>
 				<p>Lord Scum has risen to spread this offering from the internet to your soul...</p>
-				<img src="images/distrokid-icons.png">
-				<p>...and he blesseth you with a Free Download on Bandcamp...</p>
+				<img src="images/distrokid-music-icons.png">
+				<p>...and he blesseth you with Free Downloads on Bandcamp...</p>
 				<iframe class="bc_player" src="https://bandcamp.com/EmbeddedPlayer/album=3280546060/size=large/bgcol=333333/linkcol=2ebd35/tracklist=false/artwork=none/transparent=true/" seamless><a href="http://secretawesomerecords.bandcamp.com/album/lord-scum">Lord Scum by Lord Scum</a></iframe>
 				<p>(Full Album also on <a href="https://youtu.be/zCDPzc7FJt4?list=PLHePVky69WGFZAik6VnysC5XGcyhCMWNU" target="_blank" class="p_link">Secret Awesome YouTube</a>!)</p>
 			</div>
@@ -169,6 +170,37 @@
 			<a href="music.html" title="Learn the ritualistic pukecantations of The Putrid One."><img src="images/arrow_right.png"></a>
 		</div>
 	</footer>
+
+<script>
+	var youtube = document.querySelectorAll( ".youtube" );
+
+	for (var i = 0; i < youtube.length; i++) {
+	}
+
+	for (var i = 0; i < youtube.length; i++) {
+    var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg"; 
+	}
+
+	for (var i = 0; i < youtube.length; i++) { 
+    var image = new Image();
+        image.src = source;
+        image.addEventListener( "load", function() {
+            youtube[ i ].appendChild( image );
+        }( i ) );
+	}
+
+	for (var i = 0; i < youtube.length; i++) { 
+
+    youtube[i].addEventListener( "click", function() {
+        var iframe = document.createElement( "iframe" );
+            iframe.setAttribute( "frameborder", "0" );
+            iframe.setAttribute( "allowfullscreen", "" );
+            iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+            this.innerHTML = "";
+            this.appendChild( iframe );
+    	} );
+	}
+</script>	
 
 </body>
 </html>
