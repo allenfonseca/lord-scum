@@ -14,15 +14,6 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-98253451-3', 'auto');
-	  ga('send', 'pageview');
-	</script>
 </head>
 
 <body>
@@ -42,9 +33,9 @@
 	<main>		
 		<section>
 			<div class="text header_center" name="release_ext">
-				<div class="vid-container">
-					<iframe src="https://www.youtube.com/embed/eQFbrSocwH8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-				</div>		
+				<div class="vid-container youtube" data-embed="eQFbrSocwH8">
+					<div class="play-button"></div>
+				</div>					
 				<h2>4/20 Album Release Ritual 2017 (Extended)</h2>							
 				<div class="image_40o">
 					<img src="images/lord-scum-algaenon.png">
@@ -83,9 +74,9 @@
 
 		<section>
 			<div class="text header_center">
-				<h2>2016 Ritual</h2>
-				<div class="vid-container">
-					<iframe src="https://www.youtube.com/embed/xxUa-1OvsgU?list=PLHePVky69WGFZAik6VnysC5XGcyhCMWNU&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				<h2>2016 Ritual</h2>	
+				<div class="vid-container youtube" data-embed="xxUa-1OvsgU">
+					<div class="play-button"></div>
 				</div>	
 			</div>	
 
@@ -109,37 +100,8 @@
 			<a href="about.html" title="Who is Lord Scum? Be riddled with answers & even more questions..."><img src="images/arrow_right.png"></a>
 		</div>					
 	</footer>
-	
-<script>
-	var youtube = document.querySelectorAll( ".youtube" );
 
-	for (var i = 0; i < youtube.length; i++) {
-	}
-
-	for (var i = 0; i < youtube.length; i++) {
-    var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg"; 
-	}
-
-	for (var i = 0; i < youtube.length; i++) { 
-    var image = new Image();
-        image.src = source;
-        image.addEventListener( "load", function() {
-            youtube[ i ].appendChild( image );
-        }( i ) );
-	}
-
-	for (var i = 0; i < youtube.length; i++) { 
-
-    youtube[i].addEventListener( "click", function() {
-        var iframe = document.createElement( "iframe" );
-            iframe.setAttribute( "frameborder", "0" );
-            iframe.setAttribute( "allowfullscreen", "" );
-            iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
-            this.innerHTML = "";
-            this.appendChild( iframe );
-    	} );
-	}
-</script>	
+	<script type="text/javascript" src="scripts/script.js"></script>	
 
 </body>
 </html>
