@@ -307,9 +307,9 @@ input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"]:act
     cursor: pointer;
 }
 .youtube img {
-    width: 102%;
+    width: 105%;
     top: -25%;
-    left: -1%;
+    left: -3%;
 }
 .youtube .play-button {
     width: 80px;
@@ -359,7 +359,6 @@ input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"]:act
     padding-bottom: 50%;
     margin: 30px 0;
     padding-top: 35px; height: 0; overflow: hidden;
-	border: 3px solid black;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px rgba(0,0,0,0.7), -5px -5px 5px rgba(0,0,0,0.7);	
 }
