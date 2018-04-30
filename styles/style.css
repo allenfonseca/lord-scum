@@ -1,4 +1,4 @@
-/* * {
+/** {
 	border: 1px dotted white;
 }*/
 
@@ -15,6 +15,11 @@ html {
 }
 
 body {
+	background: #000;
+	background: -moz-linear-gradient(to bottom right, green, black, purple);
+	background: -webkit-linear-gradient(to bottom right, green, black, purple);
+	background: -o-linear-gradient(to bottom right, green, black, purple);
+	background: -ms-linear-gradient(to bottom right, green, black, purple);
 	background: linear-gradient(to bottom right, green, black, purple);
 	padding: 0;
 	font-family: Special Elite, serif;
@@ -50,6 +55,10 @@ main img {
 	border: 3px solid black;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px rgba(0,0,0,0.7), -5px -5px 5px rgba(0,0,0,0.7);	
+	-webkit-transition: border-radius .3s linear;
+	-moz-transition: border-radius .3s linear;
+	-o-transition: border-radius .3s linear;
+	transition: border-radius .3s linear;
 }
 
 figure {
@@ -72,6 +81,19 @@ footer img {
 	border-radius: 5px;
 	margin-top: 4px;
 	margin-left: 38.5%;
+}
+
+footer img[src="images/lordscumbanner.png"]:hover {
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 footer .arrow_left {
@@ -111,7 +133,7 @@ h1 {
 
 h2 {
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	line-height: 1.3;
 }
 
@@ -195,6 +217,12 @@ input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"]:act
 	display: inline-block;
 }
 
+.image_50o {
+	width: 50%;
+	margin: auto;
+	opacity: 0.8;
+}
+
 .image_60o {
 	width: 60%;
 	margin: auto;
@@ -242,32 +270,15 @@ input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"]:act
 	text-shadow: 0px 0px 5px white;	
 }
 
-.mc-field-group {
-	margin-bottom: 10px;
-}
-
-.mc-field-group input[type="text"]  {
-	width: 110px;
-}
-
-.mc_img {
-	width: 50%;
-	margin-bottom: -30px;
-	top: -30px;
-	position: relative;
-	float: right;
-}
-
 .p_link {
-	color: green;
-	font-weight: bold;
+	color: #ffeb3bd1;
 }
 
 .text {
 	width: 100%;
 	background-color: rgba(201, 201, 201, 0.4);
 	text-shadow: 0px 0px 0px black;
-	padding: 5px 20px;
+	padding: 25px 20px;
 	margin: 15px auto 30px auto;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
@@ -315,7 +326,7 @@ input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"]:act
 }
 
 .toggle-content:focus, .toggle-content:hover {
-	color: red;
+	color: #f00;
 	box-shadow: 10px 10px 100px #C90000, -10px -10px 100px #C90000;	
 }
 
@@ -394,11 +405,6 @@ input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"]:act
     height: 100%;
 }
 
-#mc_embed_signup_scroll {
-	float: left;
-	display: inline-block;
-}
-
 /*---START Navigation---*/
 
 .nav_main {
@@ -446,11 +452,6 @@ input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"]:act
 
 	.book {
 		text-align: center;
-	}
-
-	.mc_img {
-		width: 100%;
-		margin-top: 25px;
 	}
 
 	.nav_main {
@@ -506,11 +507,6 @@ input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"]:act
 		margin-top: -10px;
 	}	
 
-	.mc_img {
-		width: 100%;
-		margin-top: 25px;
-	}
-
 	.nav_main li {
 		letter-spacing: 0.01em;
 	}
@@ -520,4 +516,4 @@ input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"]:act
 	}	
 }
 
-/*--- END Media Queries---*/
+/*--- END Media Queries---
