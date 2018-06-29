@@ -144,6 +144,21 @@ h5 {
 	color: rgba(255,255,255,0.6);
 }
 
+img[src*="ufo"] {
+	width: 5em;
+	box-shadow: 0 0 0;
+	border: none;
+	display: block;
+	padding-top: 5%;
+	margin-bottom: -10%;
+	position: relative;
+	z-index: 1000;
+}
+
+a img[src*="ufo"]:focus, a img[src*="ufo"]:hover, a img[src*="ufo"]:active {
+	box-shadow: 0 0 0;
+}
+
 input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"]:active {
 	color: #C90000;
 	box-shadow: 10px 10px 100px #C90000, -10px -10px 100px #C90000;	
@@ -502,6 +517,10 @@ input[type="submit"]:focus, input[type="submit"]:hover, input[type="submit"]:act
 	h5 {
 		font-size: 1.2rem;
 	}
+
+	img[src*="ufo"] {
+	margin-bottom: -20%;
+}
 
 	.about_profile h3 {
 		margin-top: -10px;
